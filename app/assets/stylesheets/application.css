@@ -1,0 +1,72 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+#post-body .left-content .panel{
+	box-shadow:none;
+	border-bottom-width:3px;
+}
+#post-body .left-content .panel .user .user-name{
+	font-size:20px;
+	font-weight:600;
+	color:#555;
+}
+#post-body .left-content .panel .user .user-id{
+	color:#aaa;
+}
+#post-body .left-content .panel .user:hover{
+	text-decoration:none;
+	border-bottom:1px solid #555;
+}
+#post-body .left-content .panel .user-activity{
+	text-align:center;
+}
+#post-body .left-content .panel .user-activity .row{
+	border-bottom:1px solid #ddd;
+	padding:10px 0px;
+}
+#post-body .left-content .panel .user-activity .row .text{
+	font-size:12px;
+	color:#777;
+}
+#post-body .left-content .panel .user-activity .row .num{
+	font-size:18px;
+}
+#post-body .left-content .panel .user-activity .new-tweet{
+	margin-top:20px;
+}
+#post-body .left-content .panel .user-activity .new-tweet textarea{
+	width:100%;
+}
+#post-body .left-content .panel .user-activity .new-tweet .submit{
+	width:100%;
+}
+#post-body .right-content .list-group-item:last-child{
+	border-bottom-width:3px;
+}
+#post-body .right-content .list-group-item .user .user-name a{
+	color:#555;
+}
+#post-body .right-content .list-group-item .user .user-id{
+	font-size:14px;
+	color:#aaa;
+	font-weight:400;
+}
+#post-body .right-content .list-group-item .tweet-content{
+	font-size:12px;
+}
+#post-body .right-content .list-group-item .tweet-content .content-footer a{
+	font-size:12px;
+	margin-right:10px;
+}

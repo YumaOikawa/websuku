@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Websuku</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<header>
+        <nav>
+            <% if user_signed_in? %>
+                <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
+                <%= link_to 'マイページ', user_path(current_user) %>
+            <% else %>
+                <%= link_to 'サインアップ', new_user_registration_path %>
+                <%= link_to 'ログイン', new_user_session_path %>
+            <% end %>
+        </nav>
+  </header>
+
+<%= yield %>
+
+</body>
+</html>
